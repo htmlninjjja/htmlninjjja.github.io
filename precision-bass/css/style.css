@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url("../fonts/GothamPro.woff") format("woff");
+}
+
 * {
   padding: 0px;
   margin: 0px;
@@ -411,6 +416,9 @@ body.ie ._ibg img {
 
 .tabs-block__item:hover {
   color: #919191;
+  -webkit-transition-duration: 0.4s;
+       -o-transition-duration: 0.4s;
+          transition-duration: 0.4s;
 }
 
 .tabs-block__body {
@@ -487,6 +495,9 @@ img.artist,
 
 .spollers-block__title:hover {
   color: #bebebe;
+  -webkit-transition-duration: 0.4s;
+       -o-transition-duration: 0.4s;
+          transition-duration: 0.4s;
 }
 
 .spollers-block__body {
@@ -895,7 +906,6 @@ img.artist {
   height: 100%;
   top: 0;
   right: 0;
-  border: 1px solid blue;
   margin: auto;
 }
 
