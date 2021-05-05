@@ -740,6 +740,9 @@ img.artist,
 .button:hover {
   color: #000;
   background-color: #fff;
+  -webkit-transition-duration: 1s;
+       -o-transition-duration: 1s;
+          transition-duration: 1s;
 }
 
 ._no-webp .page-origin{
@@ -1163,6 +1166,9 @@ img.artist {
   border: 2px solid #fff;
   color: #fff;
   background-color: #000;
+  -webkit-transition-duration: 1s;
+       -o-transition-duration: 1s;
+          transition-duration: 1s;
 }
 
 .copyright {
