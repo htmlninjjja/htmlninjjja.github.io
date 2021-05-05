@@ -5,6 +5,12 @@
   src: url("../fonts/GothamPro.woff") format("woff");
 }
 
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url("../fonts/GothamPro-Bold.woff") format("woff");
+  font-weight: bold;
+}
+
 * {
   padding: 0px;
   margin: 0px;
