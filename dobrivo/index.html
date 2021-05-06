@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="js/hamburger.js"></script> 
+	<link rel="stylesheet" href="css/main.css" />
+	<title>Добриво</title>
+</head>
+
+<body>
+
+<div class="wrapper wrapper_background">
+
+	<div class="container">
+		<header>
+			<div class="header__logo">ДОБРИВО</div>
+			<div class="header_menu">
+				<ul>
+					<li><a href="#">Оплата и доставка</a></li>
+					<li><a href="#">Новости</a></li>
+					<li><a href="#">Справочник</a></li>
+					<li><a href="#">Сертификаты</a></li>
+				</ul>
+			</div>
+			<div class="header_lang">
+				<select>
+	    			<option>RU</option>
+	    			<option>UA</option>
+	    			<option>EN</option>
+				</select>
+			</div>		
+		</header>
+	</div>
+
+	<div class="container">
+		<div class="menu">
+			<div class="menu_burger"><span></span></div>
+			<ul class="menu_main">
+				<li><a href="#">Нагро-удобрение</a></li>
+				<li><a href="#">Биодизель</a></li>
+				<li><a href="#">Силко</a></li>
+				<li><a href="#">Интернет-магазин</a></li>
+				<li><a href="#">Вопросы-ответы</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+		</div>
+		<ul class="menu_cart">
+			<li><a href="#">Корзина</a></li>
+		</ul>
+	</div>
+
+	<div class="container slogan">
+		<h1><span>Органическое </span><span class="slogan-pad1">нано-удобрение </span><span class="slogan-pad2">Добриво</span></h1>
+	</div>
+
+</div>
+
+<div class="wrapper">
+
+	<div class="container content">
+
+		<div class="content_left-side">
+			<div class="content_bottle"><img src="img/bottle.png" alt="Добриво" /></div>
+			<div class="content_advantages">
+				<div class="content_advantage">
+					<h2>Прирост урожая</h2>
+					<p class="content_description">в сравнении с химическим удобрением</p>
+					<p class="content_percent">30% − 250%</p>
+				</div>
+				<div class="content_advantage">
+					<h2>Экономия</h2>
+					<p class="content_description">химических удобрений в хозяйстве</p>
+					<p class="content_percent">до 70%</p>
+				</div>
+				<div class="content_advantage">
+					<h2>Рост корневой</h2>
+					<p class="content_description">системы растений при использовании</p>
+					<p class="content_percent">в 3 − 10 раз</p>
+				</div>
+				<div class="content_more">
+					<h2>Узнайте<br>о нагро больше!</h2>
+					<span class="button">Узнать больше</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="content_right-side">
+			<div class="galculator">
+				<div class="galcInside">
+					<p class="galcTitle">Просчитайте прибыль</p>
+					<p class="galcSlogan"><b>Добриво</b> эффективнее химии</p>
+					<div><hr /></div>
+					<form action="#" method="post" id="frm_profit">
+						Выберите культуру<br>
+						<select id="frm_kultura">
+							<option value="3100" selected>Пшеница = 3100 грн/т</option>
+							<option value="2200">Ячмень = 2200 грн/т</option>
+							<option value="2950">Проссо = 2950 грн/т</option>
+						</select>
+						<label for="frm_urojay">Урожайность, ц/га</label><br />
+						<input type="number" name="frm_urojay" id="frm_urojay" placeholder="100" />
+						<label for="frm_udobren">Стоимость хим. удобрения, грн/га</label><br />
+						<input type="number" name="frm_udobren" id="frm_udobren" placeholder="1000" />
+						<label for="frm_ploshad">Посеваня площадь, га</label><br />
+						<input type="number" name="frm_ploshad" id="frm_ploshad" placeholder="20" />
+					</form>
+					<hr />
+					<p class="profit">ПРИБЫЛЬ ОТ ДОБРИВА
+					<span id="frm_resultat"></span> грн</p>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<div class="wrapper">
+	<div class="footer">
+		<div class="swiper-container mySwiper">
+			<div class="swiper-wrapper">
+			  <div class="swiper-slide"><img src="img/header2.jpg"></div>
+			  <div class="swiper-slide"><img src="img/header3.jpg"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script> <!-- Подключаем модуль валидатора jQuery -->
+<script src="js/galculator.js"></script> <!-- Подключаем скрипт расчёта и валидации формы -->
+<link rel="stylesheet" href="css/media.css" />
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+	spaceBetween: 0,
+	centeredSlides: true,
+	effect: "fade",
+	autoplay: {
+	  delay: 3000,
+	  disableOnInteraction: false,
+	},
+  });
+</script>
+
+</body>
+</html>
