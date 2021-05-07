@@ -140,15 +140,17 @@ header {
 	list-style-type: none;
 	width: 100%;
 	overflow: hidden;
+	display: flex;
+	flex-flow: row;
+	justify-content: space-around;
 }
 
 .menu_main li {
 	font-family: "Roboto Condensed";
-	float: left;
 	text-transform: uppercase;
 	font-weight: bold;
 	font-size: 0.9rem;
-	padding-left: 50px;
+	cursor: pointer;
 }
 
 .menu_main li a:after {
@@ -163,9 +165,6 @@ header {
 .menu_main li a {
 	color: #6D6E71;
 	text-decoration: none;
-	display: block;
-    text-align: center;
-    text-decoration: none;
 	transition: 0.5s;
 }
 
