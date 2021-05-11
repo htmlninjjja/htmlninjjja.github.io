@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /advokat/
+Disallow: /dobrivo/
+Disallow: /precision-bass/
