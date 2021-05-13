@@ -911,7 +911,7 @@ input:checked + .slider:before {
   overflow: auto;
   z-index: 5;
   display: flex;
-  flex-flow: column;
+  flex-wrap: wrap;
 }
 ul.menu__list {
   display: flex;
@@ -1099,7 +1099,7 @@ a.menu__link:visited {
   overflow: auto;
   z-index: 5;
   display: flex;
-  flex-flow: column;
+  flex-wrap: wrap;
 }
 ul.menu__list {
   display: flex;
